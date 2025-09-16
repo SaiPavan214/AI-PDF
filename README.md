@@ -4,6 +4,10 @@ A full-stack web application that allows users to upload PDFs, automatically gen
 
 ---
 
+## 🌐 Live Demo
+
+🔗 [https://ai-pdf-eight.vercel.app/](https://ai-pdf-eight.vercel.app/)
+
 ## ✨ Features
 
 - ✅ Upload PDFs and extract text automatically
