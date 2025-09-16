@@ -1,55 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 AI-PDF Notes Taker
 
-## Getting Started
+A full-stack web application that allows users to upload PDFs, automatically generate concise structured notes, and ask intelligent Q&A over the document using Generative AI.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- ✅ Upload PDFs and extract text automatically
+- ✅ Generate concise, structured notes using Generative AI
+- ✅ Ask contextual questions (Q&A) over the uploaded PDF
+- ✅ Modern, responsive UI with Tailwind CSS
+- ✅ Semantic understanding via embeddings + RAG pipeline
+- ✅ Deployed with easy scalability in mind
+
+---
+
+## 🚀 Tech Stack
+
+| Technology    | Role                           |
+| ------------- | ------------------------------ |
+| Next.js       | React-based frontend framework |
+| React         | Interactive UI components      |
+| Node.js       | Backend runtime (API routes)   |
+| OpenAI API    | LLM for summarization & Q&A    |
+| Tailwind CSS  | Styling and responsive UI      |
+| Vercel/Render | Deployment                     |
+
+---
+
+## 📁 Project Structure
+
+AI-PDF-Notes-Taker/
+│
+├── public/ # Static assets (logos, icons)
+├── src/ # Source code
+│ ├── pages/ # Next.js pages (routes, API endpoints)
+│ ├── components/ # Reusable UI components
+│ ├── utils/ # Helper functions (PDF parsing, chunking)
+│ └── styles/ # Global styles
+├── .env # Environment variables (excluded from Git)
+├── .env.example # Sample config template
+├── package.json
+└── README.md
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/SaiPavan214/AI-PDF.git
+cd AI-PDF-Notes-Taker
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+   npm install
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Configure environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a .env file in the root directory with:
 
-## Learn More
+OPENAI_API_KEY=your_openai_api_key
 
-To learn more about Next.js, take a look at the following resources:
+# Optional:
 
-- Convex Database
-https://dashboard.convex.dev/t/praveenkumarsunkaraboina/ai-pdf-notes-taker/polished-marlin-789/data?table=pdfFiles
+# GEMINI_API_KEY=your_google_generative_ai_key
 
-https://docs.convex.dev/database/writing-data
+➡️ On Vercel/Render:
+Go to your project → Settings → Environment Variables → Add the same variables above.
 
-- Text Embeddings
-https://js.langchain.com/docs/integrations/text_embedding/
-https://js.langchain.com/docs/integrations/vectorstores/convex/
+4. Run the development server
+   npm run dev
 
-- Google Generative AI
-https://ai.google.dev/
+The app will be available at:
+🔗 http://localhost:3000
 
-- Text Editor
-https://tiptap.dev/
-https://tiptap.dev/docs/editor/extensions/
+5. Access the deployed app
 
-- Hyper UI
-https://www.hyperui.dev/
+✅ Live deployment:
+🔗 https://ai-pdf-eight.vercel.app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📌 Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🗂 Save uploaded PDFs and generated notes in a database (Postgres/MongoDB)
 
-## Deploy on Vercel
+📱 Enhance mobile responsiveness
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📊 Add vector DB (Pinecone/Weaviate) for faster retrieval
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔍 Advanced search inside notes
+
+🧾 Export notes to PDF/Markdown
+
+🛡 Security
+
+Environment variables protect sensitive API keys.
+
+🚫 Never commit your .env file.
+
+✅ Instead, share a .env.example for configuration reference.
+
+🤝 Contributions
+
+Pull requests are welcome!
+If you find bugs or have ideas for improvements, feel free to open an issue or PR.
+
+📄 License
+
+This project is licensed under the MIT License
+.
+
+👨‍💻 Author
+
+Made with ❤️ by Sai Pavan
