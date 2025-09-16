@@ -51,7 +51,7 @@ AI-PDF-Notes-Taker/
 
 ```bash
 git clone https://github.com/SaiPavan214/AI-PDF.git
-cd AI-PDF-Notes-Taker
+cd AI-PDF
 ```
 
 2. Install dependencies
